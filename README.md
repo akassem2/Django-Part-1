@@ -1,1 +1,0 @@
-# Django-Part-1
