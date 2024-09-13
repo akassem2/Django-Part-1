@@ -9,6 +9,15 @@
 <body>
     {% include 'navbar.html' %}
 
+    <!--Will display the error message if the user does not exist in the system when logging in-->
+    {% if messages %}
+    <ul class="messages">
+        {% for message in messages %}
+            <li>{{ message}} </li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+
     {% block content %}
 
     {% endblock %}
