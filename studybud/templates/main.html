@@ -1,10 +1,14 @@
 <!DOCTYPE html>
+{% load static %}
 <html>
+
+
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Studybud</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'styles/main.css'%}"> <!--Tells it to find the static folder-->
 </head>
 <body>
     {% include 'navbar.html' %}
@@ -13,7 +17,7 @@
     {% if messages %}
     <ul class="messages">
         {% for message in messages %}
-            <li>{{ message}} </li>
+            <li>{{ message }}</li>
         {% endfor %}
     </ul>
     {% endif %}
