@@ -21,9 +21,7 @@
         <h5>{{room_count}} rooms available</h5>
         <a href="{% url 'create-room' %}">Create Room</a>
 
-        <div>
-            {% include 'base/feed_component.html' %}
-        </div>
+        {% include 'base/feed_component.html' %}
 
     </div>
 

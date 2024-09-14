@@ -2,7 +2,8 @@
         <hr>
         {% for message in room_messages %}
             <div>
-                <small>@{{message.user}}  {{message.created|timesince}}</small>
+                <!--The link here lets you click on the user name in the activity feed so you can see their profile.-->
+                <small><a href="{% url 'user-profile' message.user.id %}">@{{message.user}}</small></a>  {{message.created|timesince}}</small> 
                 <small>replied to "{{message.room}}</small>
 
                 <p>{{message}}</p>
