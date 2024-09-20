@@ -17,4 +17,6 @@ urlpatterns = [
 
     path('update-user/', views.updateUser, name="update-user"), #Don't need ID (<str:pk> because user will be logged in user.
 
+    path('topics/', views.topicsPage, name="topics"),
+    path('activity/', views.activityPage, name="activity"),
 ]
